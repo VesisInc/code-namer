@@ -1,0 +1,153 @@
+{
+  "name": "code-namer",
+  "displayName": "Code Namer",
+  "description": "Generate context-aware names for variables, functions, files, and more with a searchable history panel.",
+  "version": "0.0.1",
+  "publisher": "vesis-solutions",
+  "license": "SEE EULA IN LICENSE",
+  "author": {
+    "name": "Vesis Solutions (OPC) Pvt. Ltd.",
+    "email": "contact@vesissolutions.com"
+  },
+  "homepage": "https://github.com/VesisInc/code-namer#readme",
+  "bugs": {
+    "url": "https://github.com/VesisInc/code-namer/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/VesisInc/code-namer.git"
+  },
+  "keywords": [
+    "naming",
+    "variables",
+    "functions",
+    "code generation",
+    "productivity",
+    "ai",
+    "openai",
+    "refactoring"
+  ],
+  "engines": {
+    "vscode": "^1.93.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "icon": "media/icon.png",
+  "activationEvents": [],
+  "main": "./out/src/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "codeNamer.generateName",
+        "title": "Code Namer: Generate Name"
+      },
+      {
+        "command": "codeNamer.generateMoreVariations",
+        "title": "Code Namer: Generate More Variations"
+      },
+      {
+        "command": "codeNamer.setOpenAIApiKey",
+        "title": "Code Namer: Set OpenAI API Key"
+      },
+      {
+        "command": "codeNamer.showHistoryDetail",
+        "title": "Code Namer: Show History Detail"
+      },
+      {
+        "command": "codeNamer.copyFromHistory",
+        "title": "Code Namer: Copy From History"
+      },
+      {
+        "command": "codeNamer.searchHistory",
+        "title": "Code Namer: Search History"
+      },
+      {
+        "command": "codeNamer.clearHistory",
+        "title": "Code Namer: Clear History"
+      }
+    ],
+    "viewsContainers": {
+      "activitybar": [
+        {
+          "id": "codeNamer",
+          "title": "Code Namer",
+          "icon": "media/icon.svg"
+        }
+      ]
+    },
+    "views": {
+      "codeNamer": [
+        {
+          "id": "codeNamer.nameHistory",
+          "name": "Name History"
+        }
+      ]
+    },
+    "menus": {
+      "view/title": [
+        {
+          "command": "codeNamer.searchHistory",
+          "when": "view == codeNamer.nameHistory",
+          "group": "navigation@1"
+        }
+      ],
+      "view/item/context": [
+        {
+          "command": "codeNamer.showHistoryDetail",
+          "when": "view == codeNamer.nameHistory && viewItem == nameHistoryItem",
+          "group": "inline"
+        }
+      ]
+    },
+    "configuration": {
+      "type": "object",
+      "title": "Code Namer",
+      "properties": {
+        "codeNamer.provider": {
+          "type": "string",
+          "default": "fallback",
+          "enum": ["fallback", "openai"],
+          "description": "Provider for name generation. Use 'fallback' for offline heuristic or 'openai' to call OpenAI API."
+        },
+        "codeNamer.openai.apiKey": {
+          "type": "string",
+          "default": "",
+          "markdownDescription": "OpenAI API Key. If empty, the extension will use the fallback heuristic.",
+          "scope": "machine-overridable"
+        },
+        "codeNamer.openai.model": {
+          "type": "string",
+          "default": "gpt-4o-mini",
+          "markdownDescription": "OpenAI model to use when provider is 'openai'."
+        },
+        "codeNamer.suggestions.count": {
+          "type": "number",
+          "default": 5,
+          "maximum": 7,
+          "minimum": 3,
+          "markdownDescription": "Number of name suggestions to return."
+        }
+      }
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "test": "node ./out/test/runTest.js"
+  },
+  "devDependencies": {
+    "@types/glob": "^8.1.0",
+    "@types/mocha": "^10.0.10",
+    "@types/node": "^20.16.5",
+    "@types/vscode": "^1.93.0",
+    "esbuild": "^0.23.0",
+    "glob": "^10.3.12",
+    "mocha": "^10.7.3",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.6.2",
+    "@vscode/test-electron": "^2.4.0"
+  },
+  "dependencies": {}
+}

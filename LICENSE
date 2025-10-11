@@ -1,0 +1,51 @@
+Copyright (c) 2025 Vesis Solutions (OPC) Pvt. Ltd.
+
+Proprietary End-User License Agreement (EULA)
+This EULA constitutes a binding agreement between Vesis Solutions (OPC) Pvt. Ltd. ("Licensor") and You ("Licensee") for the use of the [Plugin Name] VS Code Extension ("Software").
+
+BY INSTALLING, COPYING, DOWNLOADING, ACCESSING, OR OTHERWISE USING THE SOFTWARE, YOU AGREE TO BE BOUND BY THE TERMS OF THIS EULA. IF YOU DO NOT AGREE TO THE TERMS, DO NOT INSTALL OR USE THE SOFTWARE.
+
+1. Ownership and Copyright
+The Software is licensed, not sold.
+
+Ownership: The Licensor, Vesis Solutions (OPC) Pvt. Ltd., retains all title, ownership rights, intellectual property rights, and interest in and to the Software, including all code, designs, and associated documentation.
+
+Copyright: The entire Software is protected by copyright laws and international treaty provisions. All rights not expressly granted to the Licensee are reserved by the Licensor.
+
+Source Code: The source code of the Software is considered a trade secret of the Licensor and is not licensed to the Licensee.
+
+2. Grant of License
+Subject to the terms and conditions of this EULA and your compliance with all payment obligations, the Licensor grants you a limited, non-exclusive, non-transferable, and revocable license to:
+
+Install and Use: Install and use the object code form of the Software within the Microsoft Visual Studio Code application.
+
+Purpose: Use the Software solely for your personal, internal business, non-commercial purposes, according to the license type you purchased (e.g., Single User, Team License, Enterprise License).
+
+3. Prohibited Acts and Restrictions (Crucial Closed-Source Protections)
+The Licensee expressly agrees not to and shall not permit any third party to perform the following acts:
+
+Reverse Engineering: Reverse engineer, decompile, disassemble, modify, adapt, translate, or otherwise attempt to discover the source code, underlying ideas, algorithms, or inner workings of the Software.
+
+Redistribution & Sale: Sell, sublicense, rent, lease, lend, distribute, transfer, or otherwise commercially exploit the Software.
+
+Derivatives: Create any derivative works based on the Software.
+
+Notice Removal: Remove, alter, or obscure any proprietary notices, copyright notices, trademarks, or labels on the Software.
+
+Competitive Use: Use the Software or any information derived from it to create a competing product or service.
+
+4. Third-Party and Open Source Components
+The Software may contain third-party components, including Open Source Software components, each of which is subject to its own respective license terms.
+
+The terms of this EULA apply to your use of the entire Software. If and only to the extent a third-party license or Open Source license expressly requires, those licenses will supersede the terms of this EULA for that specific component only.
+
+5. Termination
+This EULA is effective until terminated. Your license rights will immediately and automatically terminate without notice from the Licensor if you fail to comply with any material term of this EULA (especially the restrictions in Section 3). Upon termination, you must immediately cease all use of the Software and delete all copies.
+
+6. Disclaimer of Warranty and Limitation of Liability
+AS IS: THE SOFTWARE IS PROVIDED "AS IS," WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NONINFRINGEMENT.
+
+LIMITATION: IN NO EVENT SHALL THE LICENSOR BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY.
+
+7. Governing Law
+This EULA shall be governed by and construed in accordance with the laws of [Your State/Country of Incorporation], without regard to its conflict of law principles.
