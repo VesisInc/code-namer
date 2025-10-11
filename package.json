@@ -2,7 +2,7 @@
   "name": "code-namer",
   "displayName": "Code Namer",
   "description": "Generate context-aware names for variables, functions, files, and more with a searchable history panel.",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "publisher": "vesis-solutions",
   "license": "SEE EULA IN LICENSE",
   "author": {
